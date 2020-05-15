@@ -1,5 +1,6 @@
 package com.macro.copymall.portal.service.impl;
 
+import com.macro.copymall.common.api.CommonResult;
 import com.macro.copymall.portal.service.UmsMemberCacheService;
 import com.macro.copymall.portal.service.UmsMemberService;
 import org.slf4j.Logger;
@@ -7,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.Random;
 
@@ -26,6 +28,11 @@ public class UmsMemberServiceImpl implements UmsMemberService {
     @Value("${redis.expire.authCode}")
     private Long AUTH_CODE_EXPIRE_SECONDS;
 
+    /**
+     * 获取验证码
+     * @param telephone
+     * @return
+     */
     @Override
     public String generateAuthCode(String telephone) {
         StringBuilder sb = new StringBuilder();

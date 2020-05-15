@@ -11,8 +11,6 @@ import java.util.List;
  * 用于配置不需要保护的资源路径
  * Created by macro on 2018/11/5.
  */
-@Getter
-@Setter
 @ConfigurationProperties(prefix = "secure.ignored")
 public class IgnoreUrlsConfig {
 
@@ -20,5 +18,9 @@ public class IgnoreUrlsConfig {
 
     public List<String> getUrls() {
         return urls;
+    }
+
+    public void setUrls(List<String> urls) {
+        this.urls = urls;
     }
 }

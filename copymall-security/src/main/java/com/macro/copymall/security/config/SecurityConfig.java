@@ -20,7 +20,6 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 /**
  * 对SpringSecurity的配置的扩展，支持自定义白名单资源路径和查询用户逻辑
- * Created by macro on 2019/11/5.
  */
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
@@ -45,9 +44,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authenticated()
                 // 关闭跨站请求防护及不使用session
                 .and()
-                .csrf()
+                .csrf()//使用的是JWT所以不需要csrf
                 .disable()
-                .sessionManagement()
+                .sessionManagement()//使用token所以不需要session
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 // 自定义权限拒绝处理类
                 .and()

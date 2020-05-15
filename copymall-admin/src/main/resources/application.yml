@@ -13,7 +13,7 @@ mybatis:
 
 jwt:
   tokenHeader: Authorization #JWT存储的请求头
-  secret: mall-admin-secret #JWT加解密使用的密钥
+  secret: copymall-admin-secret #JWT加解密使用的密钥
   expiration: 604800 #JWT的超期限时间(60*60*24*7)
   tokenHead: Bearer  #JWT负载中拿到开头
 
@@ -26,6 +26,9 @@ redis:
     common: 86400 # 24小时
 
 secure:
+  user:
+    name: admin
+    password: admin
   ignored:
     urls: #安全路径白名单
       - /swagger-ui.html
@@ -70,3 +73,4 @@ logging:
     com.macro.copymall: debug
 #  file: demo_log.log #配置日志生成路径
 #  path: /var/logs #配置日志文件名称
+

@@ -7,10 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 应用启动入口
  */
 @SpringBootApplication
-
-public class CopymallAdminApplication {
+public class MallAdminApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CopymallAdminApplication.class, args);
+        SpringApplication.run(MallAdminApplication.class, args);
     }
 }

@@ -31,5 +31,4 @@ public class UmsMemberController {
         return CommonResult.success(authCode,"获取验证码成功");
     }
 
-
 }
