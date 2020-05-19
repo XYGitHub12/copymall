@@ -16,11 +16,11 @@ spring:
         login-username: druid
         login-password: druid
 
-#  data:
-#    mongodb:
-#      host: localhost
-#      port: 27017
-#      database: copymall-port
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: copymall-port
 
   redis:
     host: localhost # Redis服务器地址
