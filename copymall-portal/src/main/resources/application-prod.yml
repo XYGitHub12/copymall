@@ -16,11 +16,11 @@ spring:
         login-username: druid
         login-password: druid
 
-#  data:
-#    mongodb:
-#      host: mongo
-#      port: 27017
-#      database: mall-port
+  data:
+    mongodb:
+      host: mongo
+      port: 27017
+      database: mall-port
 
   redis:
     host: redis # Redis服务器地址

@@ -27,4 +27,6 @@ public interface OmsCartItemMapper {
     int updateByPrimaryKeySelective(OmsCartItem record);
 
     int updateByPrimaryKey(OmsCartItem record);
+
+    void updateByExampleSelective(OmsCartItem omsCartItem);
 }

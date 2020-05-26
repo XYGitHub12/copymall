@@ -50,7 +50,7 @@ public class OmsCartItem implements Serializable {
     @ApiModelProperty(value = "修改时间")
     private Date modifyDate;
 
-    @ApiModelProperty(value = "是否删除")
+    @ApiModelProperty(value = "是否删除")//1-删除
     private Integer deleteStatus;
 
     @ApiModelProperty(value = "商品分类")
