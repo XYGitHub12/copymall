@@ -1,7 +1,7 @@
 package com.macro.copymall.admin.service;
 
 
-import com.macro.copymall.admin.dto.PmsBrandParam;
+import com.macro.copymall.admin.model.PmsBrandParam;
 import com.macro.copymall.mbg.model.PmsBrand;
 
 import java.util.List;

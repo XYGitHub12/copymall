@@ -1,6 +1,6 @@
 package com.macro.copymall.admin.dao;
 
-import com.macro.copymall.admin.dto.ProductAttrInfo;
+import com.macro.copymall.admin.model.ProductAttrInfo;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

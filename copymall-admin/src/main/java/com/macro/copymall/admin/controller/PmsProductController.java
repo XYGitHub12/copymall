@@ -2,9 +2,9 @@
 //
 //import com.macro.copymall.common.api.CommonPage;
 //import com.macro.copymall.common.api.CommonResult;
-//import com.macro.copymall.admin.dto.PmsProductParam;
-//import com.macro.copymall.admin.dto.PmsProductQueryParam;
-//import com.macro.copymall.admin.dto.PmsProductResult;
+//import com.macro.copymall.admin.model.PmsProductParam;
+//import com.macro.copymall.admin.model.PmsProductQueryParam;
+//import com.macro.copymall.admin.model.PmsProductResult;
 //import PmsProduct;
 //import com.macro.copymall.service.PmsProductService;
 //import io.swagger.annotations.Api;

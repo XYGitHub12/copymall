@@ -3,9 +3,10 @@ package com.macro.copymall.search.service;
 import com.macro.copymall.search.domain.EsProduct;
 import org.springframework.data.domain.Page;
 
-import java.util.List; /**
+import java.util.List;
+
+/**
  * 商品搜索管理Service
- * Created by macro on 2018/6/19.
  */
 public interface EsProductService {
     /**
@@ -40,4 +41,16 @@ public interface EsProductService {
      * @return
      */
     Page<EsProduct> search(String keyword, Integer pageNum, Integer pageSize);
+
+    /**
+     * 根据关键字搜索名称或者副标题复合查询
+     * @param keyword
+     * @param brandId
+     * @param productCategoryId
+     * @param pageNum
+     * @param pageSize
+     * @param sort
+     * @return
+     */
+    Page<EsProduct> search(String keyword, Long brandId, Long productCategoryId, Integer pageNum, Integer pageSize, Integer sort);
 }

@@ -97,6 +97,12 @@
 				<artifactId>copymall-security</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
+			<!--解决@ConfigurationProperties注解失效-->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-configuration-processor</artifactId>
+				<optional>true</optional>
+			</dependency>
 			<!--MyBatis分页插件starter-->
 			<dependency>
 				<groupId>com.github.pagehelper</groupId>

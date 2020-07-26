@@ -1,4 +1,4 @@
-package com.macro.copymall.admin.dto;
+package com.macro.copymall.admin.model;
 
 /**
  * 商品分类对应属性信息

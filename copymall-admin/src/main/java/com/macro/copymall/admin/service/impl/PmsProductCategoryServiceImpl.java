@@ -4,8 +4,8 @@ import com.github.pagehelper.PageHelper;
 
 import com.macro.copymall.admin.dao.PmsProductCategoryAttributeRelationDao;
 import com.macro.copymall.admin.dao.PmsProductCategoryDao;
-import com.macro.copymall.admin.dto.PmsProductCategoryParam;
-import com.macro.copymall.admin.dto.PmsProductCategoryWithChildrenItem;
+import com.macro.copymall.admin.model.PmsProductCategoryParam;
+import com.macro.copymall.admin.model.PmsProductCategoryWithChildrenItem;
 import com.macro.copymall.admin.service.PmsProductCategoryService;
 import com.macro.copymall.mbg.mapper.PmsProductCategoryAttributeRelationMapper;
 import com.macro.copymall.mbg.mapper.PmsProductCategoryMapper;

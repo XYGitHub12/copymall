@@ -1,4 +1,4 @@
-package com.macro.copymall.portal.domain;
+package com.macro.copymall.portal.model;
 
 
 import com.macro.copymall.mbg.model.PmsProduct;

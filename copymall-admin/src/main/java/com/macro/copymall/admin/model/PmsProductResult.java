@@ -1,4 +1,4 @@
-package com.macro.copymall.admin.dto;
+package com.macro.copymall.admin.model;
 
 /**
  * 查询单个产品进行修改时返回的结果

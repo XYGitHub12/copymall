@@ -1,5 +1,6 @@
 package com.macro.copymall.admin.dao;
 
+import com.macro.copymall.mbg.model.UmsAdminRoleRelation;
 import com.macro.copymall.mbg.model.UmsResource;
 import org.apache.ibatis.annotations.Param;
 
@@ -16,4 +17,8 @@ public interface UmsAdminRoleRelationDao {
      * @return
      */
     List<UmsResource> getRoleList(@Param("adminId") Long adminId);
+
+    void insertList(List<UmsAdminRoleRelation> list);
+
+    List<UmsResource> getResourceList(Long adminId);
 }

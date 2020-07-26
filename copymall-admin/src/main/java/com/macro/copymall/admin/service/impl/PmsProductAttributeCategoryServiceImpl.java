@@ -2,7 +2,7 @@ package com.macro.copymall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.macro.copymall.admin.dao.PmsProductAttributeCategoryDao;
-import com.macro.copymall.admin.dto.PmsProductAttributeCategoryItem;
+import com.macro.copymall.admin.model.PmsProductAttributeCategoryItem;
 import com.macro.copymall.admin.service.PmsProductAttributeCategoryService;
 import com.macro.copymall.mbg.mapper.PmsProductAttributeCategoryMapper;
 import com.macro.copymall.mbg.model.PmsProductAttributeCategory;

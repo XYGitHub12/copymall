@@ -1,7 +1,7 @@
 package com.macro.copymall.portal.dao;
 
-import com.macro.copymall.portal.domain.CartProduct;
-import com.macro.copymall.portal.domain.PromotionProduct;
+import com.macro.copymall.portal.model.CartProduct;
+import com.macro.copymall.portal.model.PromotionProduct;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

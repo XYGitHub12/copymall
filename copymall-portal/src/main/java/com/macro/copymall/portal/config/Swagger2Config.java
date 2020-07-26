@@ -5,10 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
-import springfox.documentation.service.ApiInfo;
-import springfox.documentation.service.ApiKey;
-import springfox.documentation.service.AuthorizationScope;
-import springfox.documentation.service.SecurityReference;
+import springfox.documentation.service.*;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spi.service.contexts.SecurityContext;
 import springfox.documentation.spring.web.plugins.Docket;
@@ -18,34 +15,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Swagger2API文档的配置
+ * swagger2 api接口文档设置
  */
 @Configuration
 @EnableSwagger2
 public class Swagger2Config {
+
     @Bean
-    public Docket createRestApi() {
+    public Docket createRestApi(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
+                //为当前包下的Controller生成api文档
                 .apis(RequestHandlerSelectors.basePackage("com.macro.copymall.portal.controller"))
                 .paths(PathSelectors.any())
                 .build()
-                .securitySchemes(securitySchemes())
-                .securityContexts(securityContexts());
+                .securitySchemes(securitySchemes())//配置全局参数
+                .securityContexts(securityContexts());//设置需要参数的接口（或者是去掉不需要使用参数的接口）
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("copymall前台系统")
-                .description("copymall前台模块")
+                .description("前台模块")
                 .contact("macro")
                 .version("1.0")
                 .build();
     }
 
-    private List<ApiKey> securitySchemes() {
-        //设置请求头信息
+    private List<? extends SecurityScheme> securitySchemes() {
+        //设置请求头消息
         List<ApiKey> result = new ArrayList<>();
         ApiKey apiKey = new ApiKey("Authorization", "Authorization", "header");
         result.add(apiKey);
@@ -77,4 +76,6 @@ public class Swagger2Config {
         result.add(new SecurityReference("Authorization", authorizationScopes));
         return result;
     }
+
+
 }

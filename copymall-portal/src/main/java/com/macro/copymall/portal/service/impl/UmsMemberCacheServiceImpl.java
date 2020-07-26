@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * UmsMemberCacheService实现类
- * Created by macro on 2020/3/14.
  */
 @Service
 public class UmsMemberCacheServiceImpl implements UmsMemberCacheService {
@@ -41,7 +40,6 @@ public class UmsMemberCacheServiceImpl implements UmsMemberCacheService {
     @Override
     public void setAuthCode(String telephone, String authCode) {
         String key = REDIS_DATABASE + ":" + REDIS_KEY_AUTH_CODE + ":" + telephone;
-        System.out.println(key);
         redisService.set(key,authCode,REDIS_EXPIRE_AUTH_CODE);
     }
 

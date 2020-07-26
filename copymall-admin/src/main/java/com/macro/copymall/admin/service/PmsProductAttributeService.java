@@ -1,7 +1,7 @@
 package com.macro.copymall.admin.service;
 
-import com.macro.copymall.admin.dto.PmsProductAttributeParam;
-import com.macro.copymall.admin.dto.ProductAttrInfo;
+import com.macro.copymall.admin.model.PmsProductAttributeParam;
+import com.macro.copymall.admin.model.ProductAttrInfo;
 import com.macro.copymall.mbg.model.PmsProductAttribute;
 import org.springframework.transaction.annotation.Transactional;
 

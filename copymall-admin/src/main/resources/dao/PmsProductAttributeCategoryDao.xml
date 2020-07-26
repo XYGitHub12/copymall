@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.macro.copymall.admin.dao.PmsProductAttributeCategoryDao">
 
-  <resultMap id="getListWithAttrMap" type="com.macro.copymall.admin.dto.PmsProductAttributeCategoryItem" extends="com.macro.copymall.mbg.mapper.PmsProductAttributeCategoryMapper.BaseResultMap">
+  <resultMap id="getListWithAttrMap" type="com.macro.copymall.admin.model.PmsProductAttributeCategoryItem" extends="com.macro.copymall.mbg.mapper.PmsProductAttributeCategoryMapper.BaseResultMap">
     <collection property="productAttributeList" columnPrefix="attr_" resultMap="com.macro.copymall.mbg.mapper.PmsProductAttributeCategoryMapper.BaseResultMap">
     </collection>
   </resultMap>

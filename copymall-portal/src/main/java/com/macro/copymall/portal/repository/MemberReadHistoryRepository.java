@@ -1,6 +1,6 @@
 package com.macro.copymall.portal.repository;
 
-import com.macro.copymall.portal.domain.MemberReadHistory;
+import com.macro.copymall.portal.model.MemberReadHistory;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

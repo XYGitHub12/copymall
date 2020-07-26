@@ -12,10 +12,10 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * redis操作实现类
- * Created by macro on 2020/3/3.
  */
 @Service
 public class RedisServiceImpl implements RedisService {
+
     @Autowired
     private RedisTemplate redisTemplate;
 

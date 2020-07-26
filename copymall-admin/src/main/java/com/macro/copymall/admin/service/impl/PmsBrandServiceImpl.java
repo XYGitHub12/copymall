@@ -1,7 +1,7 @@
 package com.macro.copymall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.macro.copymall.admin.dto.PmsBrandParam;
+import com.macro.copymall.admin.model.PmsBrandParam;
 import com.macro.copymall.mbg.mapper.PmsBrandMapper;
 import com.macro.copymall.mbg.mapper.PmsProductMapper;
 import com.macro.copymall.mbg.model.PmsBrand;

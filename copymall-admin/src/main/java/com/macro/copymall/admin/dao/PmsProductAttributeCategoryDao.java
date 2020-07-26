@@ -1,6 +1,6 @@
 package com.macro.copymall.admin.dao;
 
-import com.macro.copymall.admin.dto.PmsProductAttributeCategoryItem;
+import com.macro.copymall.admin.model.PmsProductAttributeCategoryItem;
 
 import java.util.List;
 

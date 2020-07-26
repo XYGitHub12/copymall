@@ -1,6 +1,6 @@
 package com.macro.copymall.admin.dao;
 
-import com.macro.copymall.admin.dto.PmsProductResult;
+import com.macro.copymall.admin.model.PmsProductResult;
 import org.apache.ibatis.annotations.Param;
 
 

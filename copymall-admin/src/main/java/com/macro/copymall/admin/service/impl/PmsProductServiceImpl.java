@@ -1,12 +1,12 @@
 //package com.macro.copymall.security.service.impl;
 //
 //import cn.hutool.core.collection.CollUtil;
-//import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageHelper;
 //
 //import com.macro.copymall.dao.*;
-//import com.macro.copymall.admin.dto.PmsProductParam;
-//import com.macro.copymall.admin.dto.PmsProductQueryParam;
-//import com.macro.copymall.admin.dto.PmsProductResult;
+//import com.macro.copymall.admin.model.PmsProductParam;
+//import com.macro.copymall.admin.model.PmsProductQueryParam;
+//import com.macro.copymall.admin.model.PmsProductResult;
 //import com.macro.copymall.mapper.*;
 //import com.macro.copymall.model.*;
 //import com.macro.copymall.service.PmsProductService;

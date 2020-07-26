@@ -1,7 +1,7 @@
 package com.macro.copymall.portal.service;
 
 import com.macro.copymall.mbg.model.OmsCartItem;
-import com.macro.copymall.portal.domain.CartPromotionItem;
+import com.macro.copymall.portal.model.CartPromotionItem;
 
 import java.util.List;
 

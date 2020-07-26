@@ -1,6 +1,6 @@
 package com.macro.copymall.portal.service.impl;
 
-import com.macro.copymall.portal.domain.MemberReadHistory;
+import com.macro.copymall.portal.model.MemberReadHistory;
 import com.macro.copymall.portal.repository.MemberReadHistoryRepository;
 import com.macro.copymall.portal.service.MemberReadHistoryService;
 import org.springframework.beans.factory.annotation.Autowired;

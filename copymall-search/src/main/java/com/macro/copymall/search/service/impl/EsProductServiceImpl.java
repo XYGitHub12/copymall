@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -18,22 +19,19 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * 商品搜索管理Sevice的实现类
+ * 商品搜索管理Service的实现类
  */
 @Service
 public class EsProductServiceImpl implements EsProductService {
-
-    private static final Logger logger = LoggerFactory.getLogger(EsProductServiceImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EsProductServiceImpl.class);
 
     @Autowired
     private EsProductDao productDao;
-
     @Autowired
     private EsProductRepository productRepository;
 
     /**
      * 从数据库中导入所有商品到ES
-     * @return
      */
     @Override
     public int importAll() {
@@ -53,7 +51,6 @@ public class EsProductServiceImpl implements EsProductService {
 
     /**
      * 根据id删除商品
-     * @param id
      */
     @Override
     public void delete(Long id) {
@@ -62,7 +59,6 @@ public class EsProductServiceImpl implements EsProductService {
 
     /**
      * 根据id批量删除商品
-     * @param ids
      */
     @Override
     public void batch(List<Long> ids) {
@@ -79,8 +75,6 @@ public class EsProductServiceImpl implements EsProductService {
 
     /**
      * 根据id添加商品
-     * @param id
-     * @return
      */
     @Override
     public EsProduct create(Long id) {
@@ -104,6 +98,27 @@ public class EsProductServiceImpl implements EsProductService {
     public Page<EsProduct> search(String keyword, Integer pageNum, Integer pageSize) {
         Pageable pageable = PageRequest.of(pageNum, pageSize);
         return productRepository.findByNameOrSubTitleOrKeywords(keyword,keyword,keyword,pageable);
+    }
+
+    /**
+     * 综合搜索
+     * @param keyword
+     * @param brandId
+     * @param productCategoryId
+     * @param pageNum
+     * @param pageSize
+     * @param sort
+     * @return
+     */
+    @Override
+    public Page<EsProduct> search(String keyword, Long brandId, Long productCategoryId, Integer pageNum, Integer pageSize, Integer sort) {
+        Pageable pageable = PageRequest.of(pageNum, pageSize);
+        NativeSearchQueryBuilder nativeSearchQueryBuilder = new NativeSearchQueryBuilder();
+        //分页
+        nativeSearchQueryBuilder.withPageable(pageable);
+        //过滤
+
+        return null;
     }
 
 

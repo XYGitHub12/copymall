@@ -1,7 +1,7 @@
 package com.macro.copymall.portal.controller;
 
 import com.macro.copymall.common.api.CommonResult;
-import com.macro.copymall.portal.domain.MemberReadHistory;
+import com.macro.copymall.portal.model.MemberReadHistory;
 import com.macro.copymall.portal.service.MemberReadHistoryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

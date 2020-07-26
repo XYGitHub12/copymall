@@ -3,6 +3,7 @@ package com.macro.copymall.security.config;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
@@ -21,10 +22,9 @@ import java.time.Duration;
 
 /**
  * Redis配置类
- * Created by macro on 2020/3/2.
  */
-@EnableCaching
 @Configuration
+@EnableCaching
 public class RedisConfig extends CachingConfigurerSupport {
 
     @Bean

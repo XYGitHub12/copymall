@@ -1,4 +1,4 @@
-package com.macro.copymall.admin.dto;
+package com.macro.copymall.admin.model;
 
 import com.macro.copymall.admin.validator.FlagValidator;
 import io.swagger.annotations.ApiModelProperty;

@@ -1,8 +1,8 @@
 package com.macro.copymall.portal.service;
 
 import com.macro.copymall.mbg.model.OmsCartItem;
-import com.macro.copymall.portal.domain.CartProduct;
-import com.macro.copymall.portal.domain.CartPromotionItem;
+import com.macro.copymall.portal.model.CartProduct;
+import com.macro.copymall.portal.model.CartPromotionItem;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

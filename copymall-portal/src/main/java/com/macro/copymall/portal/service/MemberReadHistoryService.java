@@ -1,7 +1,7 @@
 package com.macro.copymall.portal.service;
 
 
-import com.macro.copymall.portal.domain.MemberReadHistory;
+import com.macro.copymall.portal.model.MemberReadHistory;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.macro.copymall.portal.domain;
+package com.macro.copymall.portal.model;
 
 import com.macro.copymall.mbg.model.UmsMember;
 import org.springframework.security.core.GrantedAuthority;
@@ -10,7 +10,6 @@ import java.util.Collection;
 
 /**
  * 会员详情封装
- * Created by macro on 2018/8/3.
  */
 public class MemberDetails implements UserDetails {
 

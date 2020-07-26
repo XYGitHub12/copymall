@@ -2,19 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>copymall</artifactId>
-        <groupId>com.macro.copymall</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.macro.copymall</groupId>
     <artifactId>copymall-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <name>copymall-security</name>
     <packaging>jar</packaging>
 
-    <name>copymall-security</name>
+    <parent>
+        <groupId>com.macro.copymall</groupId>
+        <artifactId>copymall</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 
     <dependencies>
         <dependency>

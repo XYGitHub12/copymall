@@ -1,7 +1,7 @@
 package com.macro.copymall.admin.service;
 
-import com.macro.copymall.admin.dto.PmsProductCategoryParam;
-import com.macro.copymall.admin.dto.PmsProductCategoryWithChildrenItem;
+import com.macro.copymall.admin.model.PmsProductCategoryParam;
+import com.macro.copymall.admin.model.PmsProductCategoryWithChildrenItem;
 import com.macro.copymall.mbg.model.PmsProductCategory;
 import org.springframework.transaction.annotation.Transactional;
 

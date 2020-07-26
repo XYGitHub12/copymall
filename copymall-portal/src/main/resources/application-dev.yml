@@ -1,5 +1,5 @@
 server:
-  port: 8085
+  port: 8081
 
 spring:
   datasource:
@@ -41,6 +41,6 @@ spring:
 logging:
   level:
     org.springframework.data.mongodb.core: debug
-    com.macro.mall.mbg.mapper: debug
-    com.macro.mall.portal.dao: debug
+    com.macro.copymall.mbg.mapper: debug
+    com.macro.copymall.portal.dao: debug
 

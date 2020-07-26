@@ -1,8 +1,8 @@
 //package com.macro.copymall.service;
 //
-//import com.macro.copymall.admin.dto.PmsProductParam;
-//import com.macro.copymall.admin.dto.PmsProductQueryParam;
-//import com.macro.copymall.admin.dto.PmsProductResult;
+//import com.macro.copymall.admin.model.PmsProductParam;
+//import com.macro.copymall.admin.model.PmsProductQueryParam;
+//import com.macro.copymall.admin.model.PmsProductResult;
 //import PmsProduct;
 //import org.springframework.transaction.annotation.Isolation;
 //import org.springframework.transaction.annotation.Propagation;
